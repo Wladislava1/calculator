@@ -33,32 +33,32 @@
         <input type="button" value="C" onclick="result.value=''" id="clear-button" />
       </div>
       <div class="second-row">
-        <input type="button" value="1" onclick="liveScreen(1)" />
-        <input type="button" value="2" onclick="liveScreen(2)" />
-        <input type="button" value="3" onclick="liveScreen(3)" />
-        <input type="button" value="+" onclick="liveScreen('+')" />
+        <input type="button" value="1" onclick="liveScreen('1', result)" />
+        <input type="button" value="2" onclick="liveScreen('2', result)" />
+        <input type="button" value="3" onclick="liveScreen('3', result)" />
+        <input type="button" value="+" onclick="liveScreen('+', result)" />
       </div>
       <div class="third-row">
-        <input type="button" value="4" onclick=" liveScreen(4)" />
-        <input type="button" value="5" onclick=" liveScreen(5)" />
-        <input type="button" value="6" onclick=" liveScreen(6)" />
-        <input type="button" value="-" onclick="liveScreen('-')" />
+        <input type="button" value="4" onclick=" liveScreen('4', result)" />
+        <input type="button" value="5" onclick=" liveScreen('5', result)" />
+        <input type="button" value="6" onclick=" liveScreen('6', result)" />
+        <input type="button" value="-" onclick="liveScreen('-', result)" />
       </div>
       <div class="fourth-row">
-        <input type="button" value="7" onclick="liveScreen(7)" />
-        <input type="button" value="8" onclick="liveScreen(8)" />
-        <input type="button" value="9" onclick=" liveScreen(9)" />
-        <input type="button" value="x" onclick="liveScreen('*')" />
+        <input type="button" value="7" onclick="liveScreen('7', result)" />
+        <input type="button" value="8" onclick="liveScreen('8', result)" />
+        <input type="button" value="9" onclick=" liveScreen('9', result)" />
+        <input type="button" value="x" onclick="liveScreen('*', result)" />
       </div>
       <div class="fifth-row">
-        <input type="button" value="/" onclick="liveScreen('/')" />
-        <input type="button" value="0" onclick="liveScreen(0)" />
-        <input type="button" value="." onclick="liveScreen('.')" />
-        <input type="button" value="=" onclick="calculate(result.value)" />
+        <input type="button" value="/" onclick="liveScreen('/', result)" />
+        <input type="button" value="0" onclick="liveScreen('0', result)" />
+        <input type="button" value="." onclick="liveScreen('.', result)" />
+        <input type="button" value="=" onclick="calculate(result.value, result)" />
       </div>
     </div>
   </div>
-  <script type="module" src="js/main.js">
+  <script type="module" src="scripts/main.js">
   </script>
 </body>
 

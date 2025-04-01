@@ -1,6 +1,4 @@
-const res = document.getElementById("result");
-
-export function calculate(value) {
+export function calculate(value, res) {
   if (!value) return;
 
   try {
@@ -17,6 +15,6 @@ export function calculate(value) {
   }
 }
 
-export function liveScreen(enteredValue) {
+export function liveScreen(enteredValue, res) {
   res.value = (res.value || "") + enteredValue;
 }
